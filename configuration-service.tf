@@ -7,16 +7,17 @@ provider "aws" {
 resource "aws_instance" "config-service" {
     ami = "ami-3f34bd4c"
     instance_type = "t2.micro"
-    key_name =""
+    key_name ="xxxx"
     
     provisioner "remote-exec" {
         inline = [
           "cd /tmp",
-          "java -jar configuration-service-0.0.1-SNAPSHOT.jar"
+          "nohup java -jar configuration-service-0.0.1-SNAPSHOT.jar &",
+          "sleep 1"
         ]
         connection {
           user = "ec2-user"
-          private_key = "${file("C:\\Users\\?????\\.ssh\\??????.pem")}"
+          private_key = "${file("C:\\Users\\user\\.ssh\\xxxx.pem")}"
         }
     }
 }
