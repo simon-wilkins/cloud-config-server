@@ -8,5 +8,5 @@ spring:
 server:
   port: 8888
 management:
-  context_path: /admin
+  context-path: /admin
  
