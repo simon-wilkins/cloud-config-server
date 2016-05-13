@@ -9,4 +9,8 @@ server:
   port: 8888
 management:
   context-path: /admin
+  
+security:
+  user:
+    password: s3cret
  
