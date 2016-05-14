@@ -3,7 +3,7 @@ spring:
     config:
       server:
         git:
-          uri: file://C:/projects/springboot/cloud-config
+          uri: https://github.com/simon-wilkins/cloud-config
           
 server:
   port: 8888
@@ -12,5 +12,5 @@ management:
   
 security:
   user:
-    password: s3cret
+    password: '{cipher}ca975af0e265d0d8e572b88fa7812cd9d5b3bb200ded2082b1c64e0dcf7364e4'
  

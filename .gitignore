@@ -1,1 +1,7 @@
 /target
+/terraform.tfstate
+/terraform.tfstate.backup
+/.settings
+/.classpath
+/.project
+/.springBeans
