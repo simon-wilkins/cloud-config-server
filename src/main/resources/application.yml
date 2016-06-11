@@ -4,6 +4,7 @@ spring:
       server:
         git:
           uri: https://github.com/simon-wilkins/cloud-config
+        prefix: configserver
           
 server:
   port: 8888
